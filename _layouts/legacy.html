@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      <div style="background: white;">
+        <img src="{{ site.baseurl}}/assets/images/logo.png" alt="GoDaddy" width="100" style="margin: 0.5em 1em;"/>      
+      </div>
+      {% include navigation.html %}
+      {% include cards.html projects=site.data.projects %}
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>

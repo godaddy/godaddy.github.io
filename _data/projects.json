@@ -1,0 +1,27 @@
+[{
+  "name": "kubernetes-client",
+  "description": "Simplified Kubernetes API client for Node.js",
+  "link": "https://www.npmjs.com/package/kubernetes-client",
+  "maintainer": {
+    "name": "Silas Boyd-Wickizer",
+    "link": "https://github.com/silasbw"
+  }
+},
+{
+  "name": "datastar",
+  "description": "A robust and feature rich ODM for Cassandra",
+  "link": "https://www.npmjs.com/package/datastar",
+  "maintainer": {
+    "name": "Jarrett Cruger",
+    "link": "https://github.com/jcrugzz"
+  }
+},
+{
+  "name": "procfilter",
+  "description": "A YARA-integrated process denial framework for Windows",
+  "link": "https://github.com/godaddy/procfilter",
+  "maintainer": {
+    "name": "Emerson R. Wiley",
+    "link": "https://github.com/ewil"
+  }
+}]

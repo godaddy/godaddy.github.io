@@ -1,8 +1,6 @@
 ---
 layout: legacy
+name: Home
 ---
 
-{% comment %}
-  This is the home page for the site. For now, this is setup to serve the legacy
-  GoDaddy OSS static page.
-{% endcomment %}
+{% include cards.html projects=site.data.projects %}

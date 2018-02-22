@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include navigation.html %}    
+    <div class="container">
+      <div class="post">
+        <h1>{{ page.title }}</h1>
+        <div class="chip">
+          <img src="{{ page.author_photo }}" alt="Contact Person">          
+          <a href="https://twitter.com//{{ page.author_twitter }}">{{ page.author }}</a>
+        </div>
+        <div id="content">
+          {{content}}
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">GoDaddy Open Source</h5>
+            <p class="grey-text text-lighten-4">
+              When you join GoDaddy you’ll realize we work differently – ordinary isn’t part of our DNA. 
+              We believe when imaginations run wild you can achieve amazing accomplishments.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Get in touch</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/godaddy">GitHub</a></li>
+              <li><a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/GodaddyOSS">Twitter</a></li>
+              <li><a class="grey-text text-lighten-3" target="_blank" href="https://careers.godaddy.com/?utm_source=godaddy-oss&utm_medium=footer">Join us!</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Copyright © 1999 - 2018 GoDaddy Operating Company, LLC. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    {% include scripts.html %}
+  </body>
+</html>

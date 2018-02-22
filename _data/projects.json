@@ -24,4 +24,12 @@
     "name": "Emerson R. Wiley",
     "link": "https://github.com/ewil"
   }
+}, {
+  "name": "terminus",
+  "description": "Graceful shutdown and Kubernetes readiness / liveness checks for any Node.js HTTP applications",
+  "link": "https://github.com/godaddy/terminus",
+  "maintainer": {
+    "name": "Gergely Nemeth",
+    "link": "https://github.com/gergelyke"
+  }
 }]

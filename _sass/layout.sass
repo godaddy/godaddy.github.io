@@ -1,3 +1,20 @@
+$green: #00a63f
+$grey: #2b2b2b
+
+$break-small: 560px
+$break-large: 1024px
+
+@mixin respond-to($media)
+  @if $media == handhelds
+    @media only screen and (max-width: $break-small)
+      @content
+  @else if $media == medium-screens
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1)
+      @content
+  @else if $media == wide-screens
+    @media only screen and (min-width: $break-large)
+      @content
+
 body
   background: white
 
@@ -7,12 +24,19 @@ body
       font-size: 2rem
 
 nav
-  background: #00a63f
+  background: $green
 
 #sidenav-overlay 
   z-index: 1
 
 footer.page-footer
-  background: #2b2b2b
+  background: $grey
   color: #fff
   padding: 30px 0 0
+
+.home
+  h3
+    font-size: 2rem
+    line-height: 2
+    @include respond-to(handhelds)
+      font-size: 1rem

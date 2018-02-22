@@ -12,4 +12,10 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  {% if page.canonical%}
+    <link rel="canonical" href="{{ page.canonical }}" />
+  {% else %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url}}" />
+  {% endif %}
 </head>

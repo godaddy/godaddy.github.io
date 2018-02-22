@@ -1,13 +1,14 @@
-<nav class="uxh-nav-bottom uxh-clearfix">
-  <div class="uxh-container">
-    <div class="uxh-bot-nav-set">
-      <ul class="uxh-nav uxh-nav-left">
-        <li class="uxh-nav-item">
-          <a class="uxh-nav-link" href="{{ site.url }}">
-            Featured projects
-          </a>
-        </li>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">GoDaddy OSS</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="{{ site.url }}">Featured projects</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="{{ site.url }}">Featured projects</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>

@@ -1,5 +1,7 @@
-<section style="margin-top: 1em;">
+<h1>Featured projects</h1>
+
+<ul class="collection">
   {% for project in include.projects %}
     {% include card.html project=project %}
   {% endfor %}
-</section>
+</ul>

@@ -12,3 +12,7 @@ github_username:  godaddy
 analytics_id: UA-37178807-20
 
 permalink: pretty
+
+sass:
+  sass_dir: ./_sass
+  style: compressed

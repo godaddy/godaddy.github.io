@@ -10,6 +10,9 @@
           <img src="{{ page.author_photo }}" alt="Contact Person">          
           <a href="https://twitter.com//{{ page.author_twitter }}">{{ page.author }}</a>
         </div>
+        <div class="chip twitter">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}">Share on Twitter</a>
+        </div>
         <div id="content">
           {{content}}
         </div>

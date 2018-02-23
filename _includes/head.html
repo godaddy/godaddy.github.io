@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+  <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{site.description}}">
 
   <!-- Compiled and minified CSS -->
@@ -17,5 +17,18 @@
     <link rel="canonical" href="{{ page.canonical }}" />
   {% else %}
     <link rel="canonical" href="{{ site.url }}{{ page.url}}" />
+  {% endif %}
+
+  <!-- facebook share tags -->
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url}}">
+  {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}">
+  {% endif %}
+
+  <!-- twitter share tags -->
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url}}">
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }} | @GodaddyOSS">
   {% endif %}
 </head>

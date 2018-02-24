@@ -38,6 +38,8 @@ Health checks of your applications are called by the load balancer of your appli
 
 On how to set up health checks for Kubernetes, check out the official [Configure Liveness and Readiness Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/) docs.
 
+{% include cta.html %}
+
 # Enter `terminus`
 
 [terminus](https://github.com/godaddy/terminus) is an open-source project, which adds health checks and graceful shutdown to your applications - to save you from the boilerplate code you would add otherwise. You only have to provide the cleanup logic for graceful shutdowns, and the health check logic for health checks, all the rest is handled by [terminus](https://github.com/godaddy/terminus).

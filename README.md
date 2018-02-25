@@ -1,6 +1,6 @@
-# godaddy.github.io
+# GoDaddy Open Source Center
 
-The future home for GoDaddy OSS.
+The website for godaddy.github.io.
 
 ### Development
 

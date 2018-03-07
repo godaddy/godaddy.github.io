@@ -20,12 +20,13 @@ body
   display: flex
   min-height: 100vh
   flex-direction: column
+  font-family: 'Raleway', sans-serif
 
   #content
     padding: 1em
     h1
       font-size: 3rem
-      font-weight: 800
+      font-weight: 900
 
 .container
   flex: 1 0 auto
@@ -33,6 +34,10 @@ body
 nav
   background: $green
   border-top: 3px solid #008934
+  font-weight: 800
+  .brand-logo
+    @include respond-to(handhelds)
+      font-size: 1.5rem
 
 #sidenav-overlay 
   z-index: 1

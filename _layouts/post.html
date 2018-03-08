@@ -9,7 +9,7 @@
         {% for author in page.authors %}
         <div class="chip">
           <img src="{{ author.photo }}" alt="{{ author.name }}">          
-          <a href="https://twitter.com//{{ author.twitter }}">{{ author.name }}</a>
+          <a target="_blank" href="{{ author.url }}">{{ author.name }}</a>
         </div>
         {% endfor %}
         <div class="chip twitter">

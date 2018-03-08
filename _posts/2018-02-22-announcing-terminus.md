@@ -7,7 +7,7 @@ excerpt: Your application is serving requests constantly for your users. You and
 canonical: https://nemethgergely.com/nodejs-healthcheck-graceful-shutdown
 authors:
   - name: Gergely Nemeth
-    twitter: nthgergo
+    url: https://twitter.com/nthgergo
     photo: https://avatars2.githubusercontent.com/u/2174968?s=460
 ---
 

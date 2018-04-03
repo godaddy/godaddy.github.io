@@ -14,9 +14,9 @@ Many web apps harness internationalization through frameworks such as React-Intl
  
 However, as translators or application developers add and remove messages, or create additional translation files to support new locales, the chance of having a malformed translation file increases. 
  
-Manually verifying updates is error-prone, because it's tedious to inspect large translation files and there are many sources of issues. For example, it's easy for a developer or translator to inadvertently introduce file formatting syntax errors (e.g. JSON), malformed or missing message keys, or invalid message syntax (e.g. Format.js / ICU Message Format). If you use JSON as your translation file format, then you might want to be able to cross check the keys of each locales's translation file to ensure they all match and also check that the message syntax for each translation is valid.
+Manually verifying updates is error-prone, because it's tedious to inspect large translation files and there are many sources of issues. For example, it's easy for a developer or translator to inadvertently introduce file formatting syntax errors (e.g. JSON), malformed or missing message keys, or invalid message syntax (e.g. Format.js / ICU Message Format). If you use JSON as your translation file format, then you might want to be able to cross check the keys of each locale's translation file to ensure they all match and check that the message syntax for each translation is valid.
  
-Now these issues might seem small, but they have the potential to affect real users of your application. Here's what could happen when a message key is accidentially malformed in the translation file for the current user's locale:
+Now these issues might seem small, but they have the potential to affect real users of your application. Here's what could happen when the syntax for a message is accidentally malformed:
  
 <p align="center"><b>Before</b> 😸</p>
 <p align="center">
@@ -31,7 +31,7 @@ Now these issues might seem small, but they have the potential to affect real us
   <em>(example using react-intl)</em>
 </p>
  
-**Having a degree of automated verfication can help easily detect these issues before changes are even merged into the translations project.**
+**Having a degree of automated verification can help easily detect these issues before changes are even merged into the translations project.**
  
 Here's how the plugin would catch the invalid ICU Message syntax from above:
  
@@ -39,7 +39,7 @@ Here's how the plugin would catch the invalid ICU Message syntax from above:
   <img src="https://i.imgur.com/z71uEe0.png" width="100%"/>
 </p>
  
-We're excited to announce **eslint-plugin-i18n-json**. **A fully extendable eslint plugin for JSON i18n translation files**! It's easy to get started and caters to different translation project setups. Whether your translation files have either a flat or nested structure, or even if you have a translation file per each component of the UI *(e.g. menu.json, search.json, etc.)* , we've got you covered! 🙌
+We're excited to announce [**eslint-plugin-i18n-json**](https://github.com/godaddy/eslint-plugin-i18n-json). **A fully extendable eslint plugin for JSON i18n translation files**! It's easy to get started and caters to different translation [project setups](https://github.com/godaddy/eslint-plugin-i18n-json/tree/master/examples). Whether your translation files have either a flat or nested structure, or even if you have a translation file per each component of the UI *(e.g. menu.json, search.json, etc.)* , we've got you covered! 🙌
  
 **By leveraging eslint-plugin-i18n-json, your team can relax knowing that any change to a translation file will go through strict checks.** 👌
  
@@ -51,8 +51,8 @@ We're excited to announce **eslint-plugin-i18n-json**. **A fully extendable esli
  
 - validate syntax per message
   - rule: `i18n-json/valid-message-syntax`
-  - default syntax check is for ICU Message syntax
-  - can support any message syntax through custom validators. [Example](examples/custom-message-syntax/)
+  - default syntax check is for ICU Message Format
+  - can support any message syntax through custom validators. [Example](https://github.com/godaddy/eslint-plugin-i18n-json/tree/master/examples/custom-message-syntax)
  
 - ensure translation files have identical keys
   - `i18n-json/identical-keys`
@@ -64,7 +64,7 @@ We're excited to announce **eslint-plugin-i18n-json**. **A fully extendable esli
  
 ---
  
-Please check out the project on [Github](https://github.com/godaddy/eslint-plugin-i18n-json)  and try it out by installing from [NPM](https://www.npmjs.com/package/eslint-plugin-i18n-json).
+Please check out the project on [Github](https://github.com/godaddy/eslint-plugin-i18n-json) and try it out by installing from [NPM](https://www.npmjs.com/package/eslint-plugin-i18n-json).
  
 👋 Feel free to contribute! We'd love any type of contribution! 😄
  
@@ -74,7 +74,6 @@ Please check out the project on [Github](https://github.com/godaddy/eslint-plugi
  
 - intl-messageformat-parser
  
-- report formatter ui heavily inspired from: https://github.com/sindresorhus/eslint-formatter-pretty
+- Report formatter UI heavily inspired from [eslint-formatter-pretty by Sindre Sorhus](https://github.com/sindresorhus/eslint-formatter-pretty)
  
 - ["Translate" icon](https://thenounproject.com/term/translate/1007332) created by Björn Andersson, from [the Noun Project](https://thenounproject.com/). Used with attribution under Creative Commons.
- 

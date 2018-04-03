@@ -20,12 +20,12 @@ Now these issues might seem small, but they have the potential to affect real us
  
 <p align="center"><b>Before</b> 😸</p>
 <p align="center">
-  <img src="https://i.imgur.com/gBOxGQ2.png" width="500"/>
+  <img src="https://i.imgur.com/gBOxGQ2.png" width="100%"/>
 </p>
  
 <p align="center"><b>After</b> 🙀</p>
 <p align="center">
-  <img src="https://i.imgur.com/gFQFqKD.png" width="500"/>
+  <img src="https://i.imgur.com/gFQFqKD.png" width="100%"/>
 </p>
 <p align="center">
   <em>(example using react-intl)</em>
@@ -36,7 +36,7 @@ Now these issues might seem small, but they have the potential to affect real us
 Here's how the plugin would catch the invalid ICU Message syntax from above:
  
 <p align="center">
-  <img src="https://i.imgur.com/z71uEe0.png" width="500"/>
+  <img src="https://i.imgur.com/z71uEe0.png" width="100%"/>
 </p>
  
 We're excited to announce **eslint-plugin-i18n-json**. **A fully extendable eslint plugin for JSON i18n translation files**! It's easy to get started and caters to different translation project setups. Whether your translation files have either a flat or nested structure, or even if you have a translation file per each component of the UI *(e.g. menu.json, search.json, etc.)* , we've got you covered! 🙌

@@ -32,4 +32,12 @@
     "name": "Gergely Nemeth",
     "link": "https://github.com/gergelyke"
   }
+}, {
+  "name": "Asset System",
+  "description": "A cross platform asset rendering system for React and React-Native using SVG's",
+  "link": "https://github.com/godaddy/asset-system",
+  "maintainer": {
+    "name": "Arnout Kazemier",
+    "link": "https://github.com/3rd-Eden"
+  }
 }]

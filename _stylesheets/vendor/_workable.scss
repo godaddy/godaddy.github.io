@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles for the Workable widget
+// -----------------------------------------------------------------------------
+
+#whr_embed_hook {
+  h3 {
+    font-size: 2em;
+  }
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .whr-date {
+    display: none;
+  }
+}

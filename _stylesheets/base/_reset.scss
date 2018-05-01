@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file resets the styling of elements to a consistent baseline
+// -----------------------------------------------------------------------------
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+#sidenav-overlay {
+  z-index: 1;
+}

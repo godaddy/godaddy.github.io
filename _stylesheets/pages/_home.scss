@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page
+// -----------------------------------------------------------------------------
+
+.page-home {
+  h3 {
+    font-size: 2rem;
+    line-height: 2;
+
+    @include respond-to(handhelds) {
+      font-size: 1rem;
+    }
+  }
+  #statement {
+    margin: 5em 0;
+  }
+}

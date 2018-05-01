@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body id="post-page">
-    {% include navigation.html %}    
+  <body class="page-post">
+    {% include navigation.html %}
     <div class="container">
       <div class="post">
         <h1>{{ page.title }}</h1>
         {% for author in page.authors %}
         <div class="chip">
-          <img src="{{ author.photo }}" alt="{{ author.name }}">          
+          <img src="{{ author.photo }}" alt="{{ author.name }}">
           <a target="_blank" href="{{ author.url }}">{{ author.name }}</a>
         </div>
         {% endfor %}
@@ -18,9 +18,9 @@
         <div id="content">
           {{content}}
         </div>
-        <center style="margin: 1em;">
+        <div class="center">
           <a class="twitter-follow-button" href="https://twitter.com/GodaddyOSS" data-size="large">Follow @GodaddyOSS</a>
-        </center>
+        </div>
       </div>
     </div>
     <footer class="page-footer">
@@ -29,7 +29,7 @@
           <div class="col l6 s12">
             <h5 class="white-text">GoDaddy Open Source</h5>
             <p class="grey-text text-lighten-4">
-              When you join GoDaddy you’ll realize we work differently – ordinary isn’t part of our DNA. 
+              When you join GoDaddy you’ll realize we work differently – ordinary isn’t part of our DNA.
               We believe when imaginations run wild you can achieve amazing accomplishments.
             </p>
           </div>

@@ -3,8 +3,8 @@ name: GoDaddy Open Source Center
 email: opensource@godaddy.com
 description: > # this means to ignore newlines until the next key
   Official GoDaddy open source engineering page, showcasing
-  open source libraries and projects created by GoDaddy 
-  engineering teams. 
+  open source libraries and projects created by GoDaddy
+  engineering teams.
 url: "https://godaddy.github.io"
 
 twitter_username: GodaddyOSS
@@ -14,7 +14,7 @@ analytics_id: UA-37178807-20
 permalink: pretty
 
 sass:
-  sass_dir: ./_sass
+  sass_dir: ./_stylesheets
   style: compressed
 
 applicant_source: APPLICANT_SOURCE-3-119

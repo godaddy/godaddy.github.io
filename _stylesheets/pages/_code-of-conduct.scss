@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the code of conduct page
+// -----------------------------------------------------------------------------
+
+.page-code-of-conduct {
+  font-weight: 300;
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      list-style: square;
+      padding-bottom: 1em;
+    }
+  }
+}

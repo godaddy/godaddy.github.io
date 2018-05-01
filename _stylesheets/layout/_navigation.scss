@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to layout navigation
+// -----------------------------------------------------------------------------
+
+.navigation {
+  background: $godaddy-deep-green;
+  border-top: 3px solid #008934;
+  font-weight: 800;
+
+  .brand-logo {
+    @include respond-to(handhelds) {
+      font-size: 1.5rem;
+    }
+  }
+}

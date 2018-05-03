@@ -5,4 +5,10 @@ name: Featured projects
 
 <h1>Featured projects</h1>
 
-{% include cards.html projects=site.data.projects %}
+<div class="row">
+  {% for project in site.data.projects %}
+  <div class="col s12">
+    {% include component/project-card.html project=project %}
+  </div>
+  {% endfor %}
+</div>

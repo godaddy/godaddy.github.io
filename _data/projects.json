@@ -1,7 +1,15 @@
 [{
   "name": "kubernetes-client",
   "description": "Simplified Kubernetes API client for Node.js",
-  "link": "https://www.npmjs.com/package/kubernetes-client",
+  "links": [{
+    "title": "kubernetes-client on GitHub",
+    "type": "source",
+    "url": "https://github.com/godaddy/kubernetes-client"
+  }, {
+    "title": "kubernetes-client on npm",
+    "type": "package",
+    "url": "https://www.npmjs.com/package/kubernetes-client"
+  }],
   "maintainer": {
     "name": "Silas Boyd-Wickizer",
     "link": "https://github.com/silasbw"
@@ -10,7 +18,15 @@
 {
   "name": "datastar",
   "description": "A robust and feature rich ODM for Cassandra",
-  "link": "https://www.npmjs.com/package/datastar",
+  "links": [{
+    "title": "datastar on GitHub",
+    "type": "source",
+    "url": "https://github.com/godaddy/datastar"
+  }, {
+    "title": "datastar on npm",
+    "type": "package",
+    "url": "https://www.npmjs.com/package/datastar"
+  }],
   "maintainer": {
     "name": "Jarrett Cruger",
     "link": "https://github.com/jcrugzz"
@@ -19,7 +35,11 @@
 {
   "name": "procfilter",
   "description": "A YARA-integrated process denial framework for Windows",
-  "link": "https://github.com/godaddy/procfilter",
+  "links": [{
+    "title": "procfilter on GitHub",
+    "type": "source",
+    "url": "https://github.com/godaddy/procfilter"
+  }],
   "maintainer": {
     "name": "Emerson R. Wiley",
     "link": "https://github.com/ewil"
@@ -27,15 +47,27 @@
 }, {
   "name": "terminus",
   "description": "Graceful shutdown and Kubernetes readiness / liveness checks for any Node.js HTTP applications",
-  "link": "https://github.com/godaddy/terminus",
+  "links": [{
+    "title": "terminus on GitHub",
+    "type": "source",
+    "url": "https://github.com/godaddy/terminus"
+  }, {
+    "title": "terminus on npm",
+    "type": "package",
+    "url": "https://www.npmjs.com/package/@godaddy/terminus"
+  }],
   "maintainer": {
     "name": "Gergely Nemeth",
     "link": "https://github.com/gergelyke"
   }
 }, {
   "name": "Asset System",
-  "description": "A cross platform asset rendering system for React and React-Native using SVG's",
-  "link": "https://github.com/godaddy/asset-system",
+  "description": "A cross platform asset rendering system for React and React-Native using SVGs",
+  "links": [{
+    "title": "asset-system on GitHub",
+    "type": "source",
+    "url": "https://github.com/godaddy/asset-system"
+  }],
   "maintainer": {
     "name": "Arnout Kazemier",
     "link": "https://github.com/3rd-Eden"

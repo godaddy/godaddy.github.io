@@ -39,7 +39,7 @@ Health checks of your applications are called by the load balancer of your appli
 
 On how to set up health checks for Kubernetes, check out the official [Configure Liveness and Readiness Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/) docs.
 
-{% include cta.html %}
+{% include component/cta.html %}
 
 # Enter `terminus`
 

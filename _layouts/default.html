@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+  {% include block/head.html %}
   <body>
-    {% include navigation.html %}
+    {% include component/navigation.html %}
     <div class="container">
       <div id="content">
         {{ content }}
@@ -34,6 +34,6 @@
         </div>
       </div>
     </footer>
-    {% include scripts.html %}
+    {% include block/scripts.html %}
   </body>
 </html>

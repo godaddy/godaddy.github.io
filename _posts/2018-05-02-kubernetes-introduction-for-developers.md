@@ -65,11 +65,11 @@ In practice, Skaffold can:
 
 *To read more on how to setup Skaffold, read the [Using Kubernetes for Local Development](https://nemethgergely.com/using-kubernetes-for-local-development/) article.*
 
-{% include cta.html %}
+{% include component/cta.html %}
 
 ### Mastering `kubectl`
 
-kubectl is a command line interface for running commands against Kubernetes clusters. 
+kubectl is a command line interface for running commands against Kubernetes clusters.
 
 The `kubectl` has the following interface:
 

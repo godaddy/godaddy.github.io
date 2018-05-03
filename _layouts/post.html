@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+  {% include block/head.html %}
+
   <body class="page-post">
-    {% include navigation.html %}
+    {% include component/navigation.html %}
+
     <div class="container">
       <div class="post">
         <h1>{{ page.title }}</h1>
+
         {% for author in page.authors %}
         <div class="chip">
           <img src="{{ author.photo }}" alt="{{ author.name }}">
           <a target="_blank" href="{{ author.url }}">{{ author.name }}</a>
         </div>
         {% endfor %}
+
         <div class="chip twitter">
           <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}">Share on Twitter</a>
         </div>
+
         <div id="content">
           {{content}}
         </div>
+
         <div class="center">
           <a class="twitter-follow-button" href="https://twitter.com/GodaddyOSS" data-size="large">Follow @GodaddyOSS</a>
         </div>
       </div>
     </div>
+
     <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">GoDaddy Open Source</h5>
+
             <p class="grey-text text-lighten-4">
               When you join GoDaddy you’ll realize we work differently – ordinary isn’t part of our DNA.
               We believe when imaginations run wild you can achieve amazing accomplishments.
             </p>
           </div>
+
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Get in touch</h5>
+
             <ul>
               <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/godaddy">GitHub</a></li>
               <li><a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/GodaddyOSS">Twitter</a></li>
@@ -49,6 +59,7 @@
         </div>
       </div>
     </footer>
-    {% include scripts.html %}
+
+    {% include block/scripts.html %}
   </body>
 </html>

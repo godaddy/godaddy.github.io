@@ -1,0 +1,29 @@
+<div class="card card--project">
+  <div class="card-stacked">
+    <div class="card-content">
+      <span class="card-title">
+        {{ project.name }}
+      </span>
+
+      <p>{{ project.description }}</p>
+      <p>
+        <em>Lead maintainer:
+          <a href="{{ project.maintainer.link }}">
+            {{ project.maintainer.name }}
+          </a>
+        </em>
+      </p>
+    </div>
+
+    <div class="card-action">
+      {% for link in project.links %}
+      <a
+        href="{{ link.url }}"
+        title="{{ link.title }}">
+        {% capture type %}{{ link.type }}{% endcapture %}
+        {% include function/get-project-text.html type=type %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

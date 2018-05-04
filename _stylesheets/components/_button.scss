@@ -1,0 +1,9 @@
+.btn,
+.btn-large {
+  background-color: $primary-base;
+  color: white;
+
+  &:hover {
+    background-color: $primary-highlight;
+  }
+}

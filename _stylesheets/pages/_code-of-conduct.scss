@@ -2,15 +2,17 @@
 // This file contains styles that are specific to the code of conduct page
 // -----------------------------------------------------------------------------
 
-.page-code-of-conduct {
-  font-weight: 300;
+.page--code-of-conduct {
+  #content {
+    font-weight: $text-font-weight-thin;
+    padding-top: $spacing-default;
 
-  ul {
-    padding-left: 20px;
+    ul {
+      padding-left: 20px;
 
-    li {
-      list-style: square;
-      padding-bottom: 1em;
+      li {
+        padding-bottom: $spacing-default;
+      }
     }
   }
 }

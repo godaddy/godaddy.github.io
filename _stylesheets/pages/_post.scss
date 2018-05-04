@@ -2,21 +2,13 @@
 // This file contains styles that are specific to the post pages
 // -----------------------------------------------------------------------------
 
-.page-post {
-  h1 {
-    font-size: 2em;
-  }
-
+.page--post {
   .container {
     line-height: 2em;
     max-width: 700px;
   }
 
   .post {
-    margin-bottom: 1em;
-  }
-
-  p img {
-    width: 100%;
+    margin-bottom: $spacing-default;
   }
 }

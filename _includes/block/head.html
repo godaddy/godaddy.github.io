@@ -1,43 +1,33 @@
 <head>
   <meta charset="utf-8">
-  
-  <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-  <meta name="description" content="{{site.description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Compiled and minified CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  {% if page.canonical%}
-    <link rel="canonical" href="{{ page.canonical }}" />
-  {% else %}
-    <link rel="canonical" href="{{ site.url }}{{ page.url}}" />
-  {% endif %}
-
-  <!-- facebook share tags -->
-  <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url}}">
-  {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}">
-  {% endif %}
-
-  <!-- twitter share tags -->
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url}}">
-  {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }} | @GodaddyOSS">
-  {% endif %}
-
-  <!-- favicons -->
+  <meta name="theme-color" content="#02c54c">
+  <meta name="msapplication-TileColor" content="#00a63f">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+
+  {% if page.canonical %}
+    <link rel="canonical" href="{{ page.canonical }}">
+  {% else %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url}}">
+  {% endif %}
+
+  <meta name="og:image" content="{{ site.url }}/assets/images/banner.png">
+  {% if page.title %}
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.name }}">
+  {% endif %}
+
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }} | @GodaddyOSS">
+  {% endif %}
 </head>

@@ -2,29 +2,31 @@
 <html lang="en">
   {% include block/head.html %}
 
-  <body class="page-post">
+  <body class="page--post">
     {% include component/navigation.html %}
+    {% capture headline %}<h1>{{ page.title }}</h1>{% endcapture %}
+    {% include component/masthead.html headline=headline %}
 
     <div class="container">
       <div class="post">
-        <h1>{{ page.title }}</h1>
-
-        {% for author in page.authors %}
-        <div class="chip">
-          <img src="{{ author.photo }}" alt="{{ author.name }}">
-          <a target="_blank" href="{{ author.url }}">{{ author.name }}</a>
-        </div>
-        {% endfor %}
-
-        <div class="chip twitter">
-          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}">Share on Twitter</a>
-        </div>
-
         <div id="content">
+          <div class="authors">
+            {% for author in page.authors %}
+            <div class="chip">
+              <img src="{{ author.photo }}" alt="{{ author.name }}">
+              <a target="_blank" href="{{ author.url }}">{{ author.name }}</a>
+            </div>
+            {% endfor %}
+
+            <div class="chip twitter">
+              <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}">Share on Twitter</a>
+            </div>
+          </div>
+
           {{content}}
         </div>
 
-        <div class="center">
+        <div class="widgets center">
           <a class="twitter-follow-button" href="https://twitter.com/GodaddyOSS" data-size="large">Follow @GodaddyOSS</a>
         </div>
       </div>
@@ -43,18 +45,18 @@
           </div>
 
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Get in touch</h5>
+            <h5 class="white-text">On the web</h5>
 
             <ul>
-              <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/godaddy">GitHub</a></li>
-              <li><a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/GodaddyOSS">Twitter</a></li>
-              <li><a class="grey-text text-lighten-3" href="/jobs">Join us!</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/godaddy">GitHub</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://twitter.com/GodaddyOSS">Twitter</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://careers.godaddy.com">Careers</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">
+        <div class="container center-align">
           Copyright © 1999 - 2018 GoDaddy Operating Company, LLC. All Rights Reserved.
         </div>
       </div>

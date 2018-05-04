@@ -8,10 +8,11 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  flex: 1 0 auto;
+// prevents large images from extending beyond their containing element
+img {
+  max-width: 100%;
 }
 
-#sidenav-overlay {
-  z-index: 1;
+.container {
+  flex: 1 0 auto;
 }

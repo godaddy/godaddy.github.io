@@ -3,12 +3,24 @@
 // -----------------------------------------------------------------------------
 
 /* Colors */
-$godaddy-deep-green: #00a63f;
-$godaddy-dark-grey: #2b2b2b;
+$black-base: $godaddy-black-base;
+$primary-base: $godaddy-primary-base;
+$primary-highlight: $godaddy-primary-highlight;
+$secondary-base: $godaddy-secondary-base;
+$secondary-highlight: $godaddy-secondary-highlight;
+$secondary-midrange: $godaddy-secondary-midrange;
+$product-base: $godaddy-product-base;
+$grey-midrange: $godaddy-grey-midrange;
+$grey-dark: $godaddy-grey-dark;
 
 /* Breakpoints */
 $break-small: 560px;
 $break-large: 1024px;
 
-/* Font Stacks */
-$text-font-stack: 'Raleway', sans-serif;
+/* Spacing */
+$spacing-default: 1em;
+$spacing-double: $spacing-default * 2;
+
+/* Text */
+$text-headline-stack: gdsherpa, Helvetica, Arial, sans-serif;
+$text-font-weight-thin: 300;

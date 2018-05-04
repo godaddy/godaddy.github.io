@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include block/head.html %}
+  <body {% if page.slug %}class="page--{{ page.slug }}"{% endif %}>
+    {% include component/navigation.html %}

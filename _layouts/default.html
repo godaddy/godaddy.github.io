@@ -1,39 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include block/head.html %}
-  <body>
-    {% include component/navigation.html %}
-    <div class="container">
-      <div id="content">
-        {{ content }}
-      </div>
-    </div>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">GoDaddy Open Source</h5>
-            <p class="grey-text text-lighten-4">
-              When you join GoDaddy you’ll realize we work differently – ordinary isn’t part of our DNA.
-              We believe when imaginations run wild you can achieve amazing accomplishments.
-            </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Get in touch</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/godaddy">GitHub</a></li>
-              <li><a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/GodaddyOSS">Twitter</a></li>
-              <li><a class="grey-text text-lighten-3" href="/jobs">Join us!</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          Copyright © 1999 - 2018 GoDaddy Operating Company, LLC. All Rights Reserved.
-        </div>
-      </div>
-    </footer>
-    {% include block/scripts.html %}
-  </body>
-</html>
+{% include section/header.html %}
+{% capture headline %}<h1>{{ page.title }}</h1>{% endcapture %}
+{% include component/masthead.html headline=headline %}
+
+<div class="container">
+  <div id="content">
+    {{ content }}
+  </div>
+</div>
+
+{% include section/footer.html %}

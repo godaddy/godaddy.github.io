@@ -2,11 +2,15 @@
 // This file imports all application-wide Sass stylesheets
 // -----------------------------------------------------------------------------
 
+/* Themes */
+@import 'themes/godaddy';
+
 /* Abstracts */
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
 /* Base */
+@import 'base/fonts';
 @import 'base/reset';
 @import 'base/typography';
 
@@ -16,6 +20,9 @@
 @import 'layout/navigation';
 
 /* Components */
+@import 'components/button';
+@import 'components/card';
+@import 'components/masthead';
 @import 'components/project-card';
 
 /* Pages */
@@ -23,9 +30,6 @@
 @import 'pages/home';
 @import 'pages/jobs';
 @import 'pages/post';
-
-/* Themes */
-@import 'themes/default';
 
 /* Vendor */
 @import 'vendor/workable';

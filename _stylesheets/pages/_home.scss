@@ -2,7 +2,19 @@
 // This file contains styles that are specific to the home page
 // -----------------------------------------------------------------------------
 
-.page-home {
+.page--home {
+  .masthead {
+    padding: 48px 0;
+  }
+
+  .masthead h1 {
+    padding: 24px 0 0;
+  }
+
+  #content {
+    padding-bottom: $spacing-double;
+  }
+
   h3 {
     font-size: 2rem;
     line-height: 2;
@@ -10,8 +22,5 @@
     @include respond-to(handhelds) {
       font-size: 1rem;
     }
-  }
-  #statement {
-    margin: 5em 0;
   }
 }

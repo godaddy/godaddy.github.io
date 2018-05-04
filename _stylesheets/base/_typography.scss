@@ -2,15 +2,29 @@
 // This file contains all typography related styles for the site
 // -----------------------------------------------------------------------------
 
-body {
-  font-family: $text-font-stack;
+h1,
+h2,
+h3 {
+  font-family: $text-headline-stack;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.text-primary-base {
+  color: $primary-base;
+}
+
+.text-grey-midrange {
+  color: $grey-midrange;
 }
 
 // TODO(chrisvogt): factor out the #content selector since these
 // seem intended for the majority of the site content — some list
 // styles are nearly duplicated in other page stylesheets
 #content {
-  padding: 1em;
+  padding-top: $spacing-double;
 
   h1 {
     font-size: 3rem;
@@ -22,6 +36,10 @@ body {
 
     li {
       list-style: square;
+    }
+
+    li.nest {
+      list-style: none;
     }
   }
 }

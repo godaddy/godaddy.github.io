@@ -117,7 +117,7 @@ await page.screenshot({path: 'my-screenshot.png'});
 
 [This blog post](http://nemethgergely.com/puppeteer-browser-automation/) gives you a more detailed look at these and other Puppeteer development options.
 
-Most significantly, in the five months since we adapted Puppeteer, the framework itself has caused no flakiness in our CICD pipeline. This is a framework where developers can be confident that tests that pass locally will also pass in CICD.
+Most significantly, in the five months since we adopted Puppeteer, the framework itself has caused no flakiness in our CICD pipeline. This is a framework where developers can be confident that tests that pass locally will also pass in CICD.
 
 ### Conclusion
 

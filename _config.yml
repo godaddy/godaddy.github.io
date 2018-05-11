@@ -13,6 +13,9 @@ analytics_id: UA-37178807-20
 
 permalink: pretty
 
+plugins:
+  - jekyll-sitemap
+
 sass:
   sass_dir: ./_stylesheets
   style: compressed

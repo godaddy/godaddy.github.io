@@ -1,67 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include block/head.html %}
+---
+slug: post
+widgets:
+  - twitter
+---
+{% include section/header.html %}
+{% capture headline %}<h1>{{ page.title }}</h1>{% endcapture %}
+{% include component/masthead.html headline=headline %}
 
-  <body class="page--post">
-    {% include component/navigation.html %}
-    {% capture headline %}<h1>{{ page.title }}</h1>{% endcapture %}
-    {% include component/masthead.html headline=headline %}
-
-    <div class="container">
-      <div class="post">
-        <div id="content">
-          <div class="authors">
-            {% for author in page.authors %}
-            <div class="chip">
-              <img src="{{ author.photo }}" alt="{{ author.name }}">
-              <a target="_blank" href="{{ author.url }}">{{ author.name }}</a>
-            </div>
-            {% endfor %}
-
-            <div class="chip twitter">
-              <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}">Share on Twitter</a>
-            </div>
-          </div>
-
-          {{content}}
+<div class="container">
+  <div class="post">
+    <div id="content">
+      <div class="authors">
+        {% for author in page.authors %}
+        <div class="chip">
+          <img src="{{ author.photo }}" alt="{{ author.name }}">
+          <a target="_blank" href="{{ author.url }}">{{ author.name }}</a>
         </div>
+        {% endfor %}
 
-        <div class="widgets center">
-          <a class="twitter-follow-button" href="https://twitter.com/GodaddyOSS" data-size="large">Follow @GodaddyOSS</a>
+        <div class="chip twitter">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}">Share on Twitter</a>
         </div>
       </div>
+
+      {{ content }}
     </div>
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">GoDaddy Open Source</h5>
+    <div class="widgets center">
+      <a class="twitter-follow-button" href="https://twitter.com/GodaddyOSS" data-size="large">Follow @GodaddyOSS</a>
+    </div>
+  </div>
+</div>
 
-            <p class="grey-text text-lighten-4">
-              When you join GoDaddy you’ll realize we work differently – ordinary isn’t part of our DNA.
-              We believe when imaginations run wild you can achieve amazing accomplishments.
-            </p>
-          </div>
-
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">On the web</h5>
-
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/godaddy">GitHub</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://twitter.com/GodaddyOSS">Twitter</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://careers.godaddy.com/?source=APPLICANT_SOURCE-3-118&utm_source=godaddy-oss" title="Work at GoDaddy">Join us!</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container center-align">
-          Copyright © 1999 - 2018 GoDaddy Operating Company, LLC. All Rights Reserved.
-        </div>
-      </div>
-    </footer>
-
-    {% include block/scripts.html %}
-  </body>
-</html>
+{% include section/footer.html %}

@@ -2,7 +2,7 @@
 layout: post
 title:  "UI Testing: moving from WebdriverIO and Selenium to Puppeteer"
 date: 2018-05-07 7:16:01 -0800
-cover: /assets/images/puppet-theater.jpg
+cover: /assets/images/headers/puppet-theater.jpg
 excerpt: When our team was losing engineering hours to Selenium-related test flakiness, we switched to Puppeteer for some of our UI tests. Given our constraints, we found that Puppeteer had a better developer experience and that the similar syntaxes of the two frameworks made the switch easy. We recommend Puppeteer for projects that do not need cross-browser compatibility.
 authors:
   - name: Conor Fellin

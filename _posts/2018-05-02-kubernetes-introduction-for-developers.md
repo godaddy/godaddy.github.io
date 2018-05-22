@@ -2,7 +2,7 @@
 layout: post
 title:  "Kubernetes - A Practical Introduction for Application Developers"
 date:   2018-05-02 05:16:01 -0800
-cover: /assets/images/kubernetes-intro.jpg
+cover: /assets/images/headers/kubernetes-intro.jpg
 excerpt: A collection of resources / best practices that help you become a more productive developer working with Kubernetes.
 authors:
   - name: Gergely Nemeth

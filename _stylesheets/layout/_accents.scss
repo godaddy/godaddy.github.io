@@ -2,10 +2,14 @@
 // This file contains all styles related to common accent elements
 // -----------------------------------------------------------------------------
 
-.chip.twitter {
+.bg-twitter {
   background: #1b95e0;
+}
 
-  a {
-    color: white;
-  }
+.bg-product-base {
+  background-color: $product-base;
+}
+
+.bg-secondary-base {
+  background-color: $secondary-base;
 }

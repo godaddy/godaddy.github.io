@@ -1,31 +1,16 @@
-<div class="card small hoverable card--project">
-  <div class="card-stacked">
-    <div class="card-content">
-      <span class="card-title">
-        {{ project.name }}
-      </span>
+<div class="card mb-3 shadow border-0">
+  <div class="card-body">
+    <h5 class="card-title text-font-headline">{{ project.name }}</h5>
+    <p class="card-text">{{ project.description }}</p>
 
-      <p class="m-b-default">
-        {{ project.description }}
-      </p>
-
-      <p class="text-small">
-        Lead maintainer:
-        <a href="{{ project.maintainer.link }}">
-          {{ project.maintainer.name }}
-        </a>
-      </p>
-    </div>
-
-    <div class="card-action">
-      {% for link in project.links %}
-      <a
-        href="{{ link.url }}"
-        title="{{ link.title }}">
-        {% capture type %}{{ link.type }}{% endcapture %}
-        {% include function/get-project-text.html type=type %}
-      </a>
-      {% endfor %}
-    </div>
+    {% for link in project.links %}
+    <a
+      class="card-link"
+      href="{{ link.url }}"
+      title="{{ link.title }}">
+      {% capture type %}{{ link.type }}{% endcapture %}
+      {% include function/get-project-text.html type=type %}
+    </a>
+    {% endfor %}
   </div>
 </div>

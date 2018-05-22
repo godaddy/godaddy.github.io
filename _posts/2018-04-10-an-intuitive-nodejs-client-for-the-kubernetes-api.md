@@ -2,7 +2,7 @@
 layout: post
 title:  "An Intuitive Node.js Client for the Kubernetes API"
 date: 2018-04-10 4:16:01 -0800
-cover: /assets/images/kubernetes-client.jpg
+cover: /assets/images/headers/kubernetes-client.jpg
 excerpt: This post explains the motivation for and design of kubernetes-client. We provide an short example on how to write your custom Kubernetes extentions using Node.js and kubernetes-client.
 authors:
   - name: Silas Boyd-Wickizer

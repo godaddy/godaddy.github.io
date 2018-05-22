@@ -1,9 +1,12 @@
-.btn,
-.btn-large {
-  background-color: $primary-base;
-  color: white;
+// -----------------------------------------------------------------------------
+// This file contains styles for the button component
+// -----------------------------------------------------------------------------
+
+.btn.btn-primary {
+  background-color: $secondary-base;
 
   &:hover {
-    background-color: $primary-highlight;
+    background-color: $secondary-midrange;
+    border-color: $secondary-highlight;
   }
 }

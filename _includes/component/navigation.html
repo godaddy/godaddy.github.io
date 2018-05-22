@@ -1,59 +1,29 @@
-<div class="navbar">
-  <nav class="navigation">
-    <div class="nav-wrapper">
-      <a href="{{ site.url }}" title="GoDaddy Open Source" class="left brand-logo">
-        GoDaddy Open Source
-      </a>
-      <a href="#" data-activates="mobile-demo" class="right button-collapse" title="Home">
-        <i class="material-icons">menu</i>
-      </a>
-      <ul class="right hide-on-med-and-down" id="nav-mobile">
-        <li>
-          <a href="/featured-projects" title="Featured projects">
-            Featured projects
-          </a>
-        </li>
-        <li>
-          <a href="/blog-posts" title="Blog posts">
-            Blog posts
-          </a>
-        </li>
-        <li>
-          <a href="/code-of-conduct" title="Code of Conduct">
-            Code of Conduct
-          </a>
-        </li>
-        <li>
-          <a href="https://careers.godaddy.com/?source=APPLICANT_SOURCE-3-118&utm_source=godaddy-oss" class="waves-effect waves-light btn inverse" title="Join us!">
-            Join us!
-          </a>
-        </li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li>
-          <a href="/" title="Home">Home</a>
-        </li>
-        <li>
-          <a href="/featured-projects" title="Featured projects">
-            Featured projects
-          </a>
-        </li>
-        <li>
-          <a href="/blog-posts" title="Blog posts">
-            Blog posts
-          </a>
-        </li>
-        <li>
-          <a href="/code-of-conduct" title="Code of Conduct">
-            Code of Conduct
-          </a>
-        </li>
-        <li>
-          <a href="https://careers.godaddy.com/?source=APPLICANT_SOURCE-3-118&utm_source=godaddy-oss" class="waves-effect waves-light btn inverse" title="Work at GoDaddy">
-            Join us!
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
+<nav class="navbar navbar-top navbar-expand-md navbar-light bg-white">
+  <a class="navbar-brand text-font-headline" href="{{ '/' | absolute_url }}" title="GoDaddy Open Source">
+    {{ site.theme_settings.title | default: site.title }}
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="topnav">
+    <ul class="navbar-nav ml-auto">
+      {% assign items = site.pages | sort: 'order' %}
+      {% for item in items %}
+      {% if item.title and item.hide != true %}
+      <li class="nav-item{% if item.url == page.url %} active{% endif %}">
+        <a class="nav-link" href="{{ item.url }}" title="{{ item.title }}">
+          {{ item.title }}
+        </a>
+      </li>
+      {% endif %}
+      {% endfor %}
+      <li class="nav-item">
+        <a class="nav-link btn btn-primary text-white shadow" href="https://careers.godaddy.com/?source=APPLICANT_SOURCE-3-118&utm_source=godaddy-oss" title="Work at GoDaddy">
+          Join us!
+        </a>
+      </li
+    </ul>
+  </div>
+</nav>

@@ -1,13 +1,18 @@
 ---
-layout: default
+title: Featured Projects
 slug: featured-projects
-title: Featured projects
+layout: default
+order: 1
 ---
 
-<div class="row">
+<div class="card-deck">
   {% for project in site.data.projects %}
-  <div class="col col s12 m6">
+    {% assign mod = forloop.index | modulo: 3 %}
+
     {% include component/project-card.html project=project %}
-  </div>
+
+    {% if mod == 0 %}
+    <div class="w-100 d-none d-sm-block"><!-- wrap every 3 on md--></div>
+    {% endif %}
   {% endfor %}
 </div>

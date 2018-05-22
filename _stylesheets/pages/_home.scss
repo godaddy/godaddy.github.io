@@ -3,24 +3,33 @@
 // -----------------------------------------------------------------------------
 
 .page--home {
+  background-color: $product-base;
+
+  .navbar-top {
+    z-index: 11;
+  }
+
   .masthead {
-    padding: 48px 0;
+    padding: 42px 0;
   }
 
-  .masthead h1 {
-    padding: 24px 0 0;
+  .masthead .container {
+    z-index: 10;
+    position: relative;
   }
 
-  #content {
-    padding-bottom: $spacing-double;
-  }
-
-  h3 {
-    font-size: 2rem;
-    line-height: 2;
-
-    @include respond-to(handhelds) {
-      font-size: 1rem;
-    }
+  .masthead::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    background: $secondary-base;
+    -webkit-transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    transform: skewY(-6deg);
+    z-index: 0;
+    top: -84px;
+    left: 0;
   }
 }

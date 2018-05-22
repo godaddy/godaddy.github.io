@@ -17,18 +17,14 @@
 /* Layout */
 @import 'layout/accents';
 @import 'layout/footer';
-@import 'layout/navigation';
 
 /* Components */
 @import 'components/button';
-@import 'components/card';
 @import 'components/masthead';
 @import 'components/project-card';
 
 /* Pages */
-@import 'pages/code-of-conduct';
 @import 'pages/home';
-@import 'pages/post';
 
 /* Vendor */
 @import 'vendor/rouge';

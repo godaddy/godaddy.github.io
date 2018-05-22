@@ -1,23 +1,31 @@
-# Site settings
-name: GoDaddy Open Source Center
-email: opensource@godaddy.com
+title: GoDaddy Open Source Center
 description: > # this means to ignore newlines until the next key
   Information from our engineering team about the technology and tools we
   use to create software which empowers small businesses around the world
   to build and market their digital identities.
+
+email: opensource@godaddy.com
 url: "https://godaddy.github.io"
 
-twitter_username: GodaddyOSS
-github_username:  godaddy
 analytics_id: UA-37178807-20
+applicant_source: APPLICANT_SOURCE-3-119
+github_username:  godaddy
+twitter_username: GodaddyOSS
+
+theme_settings:
+  title: GoDaddy Open Source
+  home_headline: GoDaddy<br class="d-block d-md-none"> Open Source
+  home_tagline: >
+    Joining forces with the<br class="d-block d-sm-none"> open source community
+  footer_text: >
+    When you join GoDaddy you’ll realize we work differently – ordinary isn’t part of our DNA.
+    We believe when imaginations run wild you can achieve amazing accomplishments.
+  copyright_text: >
+    Copyright © 1999 - 2018 GoDaddy Operating Company, LLC. All Rights Reserved.
 
 permalink: pretty
-
 plugins:
   - jekyll-sitemap
-
 sass:
   sass_dir: ./_stylesheets
   style: compressed
-
-applicant_source: APPLICANT_SOURCE-3-119

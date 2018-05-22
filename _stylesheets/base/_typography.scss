@@ -16,6 +16,10 @@ h3 {
   font-size: .875em;
 }
 
+.text-line-height-2x {
+  line-height: 2rem;
+}
+
 .text-primary-base {
   color: $primary-base;
 }
@@ -24,26 +28,6 @@ h3 {
   color: $grey-midrange;
 }
 
-// TODO(chrisvogt): factor out the #content selector since these
-// seem intended for the majority of the site content — some list
-// styles are nearly duplicated in other page stylesheets
-#content {
-  padding-top: $spacing-double;
-
-  h1 {
-    font-size: 3rem;
-    font-weight: 900;
-  }
-
-  ul {
-    padding-left: 20px;
-
-    li {
-      list-style: square;
-    }
-
-    li.nest {
-      list-style: none;
-    }
-  }
+.text-font-headline {
+  font-family: $text-headline-stack;
 }

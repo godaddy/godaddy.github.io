@@ -13,6 +13,14 @@ $product-base: $godaddy-product-base;
 $grey-midrange: $godaddy-grey-midrange;
 $grey-dark: $godaddy-grey-dark;
 
+.bg-theme-primary {
+  background: $primary-base;
+}
+
+.bg-theme-secondary {
+  background: $secondary-base;
+}
+
 /* Breakpoints */
 $break-small: 560px;
 $break-large: 1024px;

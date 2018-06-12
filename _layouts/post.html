@@ -14,15 +14,6 @@ widgets:
     {{ page.title }}
   </h1>
 
-  <div class="authors text-center">
-    {% for author in page.authors %}
-    <a href="{{ author.url }}" class="mb-3 badge border badge-light shadow-sm">
-      <img class="rounded" src="{{ author.photo }}" alt="{{ author.name }}" width="32">
-      {{ author.name }}
-    </a>
-    {% endfor %}
-  </div>
-
   {{ content }}
 
   {% include component/social-share.html %}

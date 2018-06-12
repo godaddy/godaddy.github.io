@@ -188,7 +188,7 @@ Let's look at a recent release chart for Node.js LTS:
 
 ![](/assets/images/nodejs-lts-releases.png)
 
-As you can see `node@4` entered "end of life" in April 2019. Until then it was
+As you can see `node@4` entered "end of life" in April 2018. Until then it was
 in the active support matrix for `winston` releases. Since ES6 features
 (including Symbols) were only available in `node@6` this meant that even if API
 development and re-write progress was ahead of schedule _(it wasn't)_ that

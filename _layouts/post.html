@@ -1,7 +1,7 @@
 ---
 slug: post
 widgets:
-  - twitter
+  - addthis
 ---
 {% include section/header.html %}
 
@@ -25,11 +25,8 @@ widgets:
 
   {{ content }}
 
-  <div class="text-center mb-1">
-    <a class="twitter-follow-button" href="https://twitter.com/GodaddyOSS" data-size="large">
-      Follow @GodaddyOSS
-    </a>
-  </div>
+  {% include component/social-share.html %}
+  {% include component/author-panel.html %}
 </div>
 
 {% include section/footer.html %}

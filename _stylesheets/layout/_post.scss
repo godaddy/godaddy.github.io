@@ -2,4 +2,17 @@
   .container {
     max-width: 40em;
   }
+
+  .cover-image {
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+
+    height: auto;
+    margin-top: 0;
+    min-height: 210px;
+    width: 100%;
+
+    flex: 1 0 auto;
+  }
 }

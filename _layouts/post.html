@@ -4,10 +4,16 @@ widgets:
   - twitter
 ---
 {% include section/header.html %}
-{% capture headline %}<h1>{{ page.title }}</h1>{% endcapture %}
-{% include component/masthead.html headline=headline %}
 
-<div class="container text-line-height-2x py-3">
+{% if page.options contains 'full-bleed-cover' %}
+<div class="cover-image" style="background-image: url({{ page.cover }});"></div>
+{% endif %}
+
+<div class="container text-line-height-2x pt-3">
+  <h1 class="mb-3">
+    {{ page.title }}
+  </h1>
+
   <div class="authors text-center">
     {% for author in page.authors %}
     <a href="{{ author.url }}" class="mb-3 badge border badge-light shadow-sm">

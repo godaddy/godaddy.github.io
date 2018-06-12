@@ -13,8 +13,12 @@
 </script>
 {% endif %}
 
+{% if page.widgets contains 'addthis' or layout.widgets contains 'addthis' %}
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b039a09ed801a5d"></script>
+{% endif %}
+
+{% if page.widgets contains 'twitter' or layout.widgets contains 'twitter' %}
 <script>
-  {% if page.widgets contains 'twitter' or layout.widgets contains 'twitter' %}
   window.twttr = (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],
       t = window.twttr || {};
@@ -31,5 +35,5 @@
 
     return t;
   }(document, "script", "twitter-wjs"));
-  {% endif %}
 </script>
+{% endif %}

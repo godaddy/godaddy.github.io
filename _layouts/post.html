@@ -1,6 +1,7 @@
 ---
 slug: post
 widgets:
+  - addthis
   - twitter
 ---
 {% include section/header.html %}
@@ -17,8 +18,8 @@ widgets:
 
   {{ content }}
 
+  {% include component/social-share.html %}
   {% include component/author-panel.html %}
-  <!-- {% include component/social-share.html %} -->
 </div>
 
 {% include section/footer.html %}

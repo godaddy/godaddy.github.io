@@ -31,3 +31,14 @@ h3 {
 .text-font-headline {
   font-family: $text-headline-stack;
 }
+
+.text-drop-cap {
+  color: $black-base;
+  float: left;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}

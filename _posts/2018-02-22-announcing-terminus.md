@@ -11,9 +11,9 @@ authors:
     photo: https://avatars2.githubusercontent.com/u/2174968?s=460
 ---
 
-Your application is serving requests constantly for your users. You and your team want to ship features and fixes as soon as they are ready, so you do continuous delivery. **But what happens to your users who used your product at the time of the deployment? Chances are, the requests they have in progress are going to fail.** This post helps you fix that.
+<span class="text-drop-cap">Y</span>our application is serving requests constantly for your users. You and your team want to ship features and fixes as soon as they are ready, so you do continuous delivery. **But what happens to your users who used your product at the time of the deployment? Chances are, the requests they have in progress are going to fail.** This post helps you fix that.
 
-# Graceful shutdown for Node.js
+### Graceful shutdown for Node.js
 
 When you deploy a new version of your application, the old must be replaced. The process manager you are using *(no matter if it is Heroku, Kubernetes, supervisor or anything else)* will first send a `SIGTERM` signal to the application to let it know, that it will be killed. Once it gets this signal, it should **stop accepting new requests, finish all the ongoing requests, and clean up the resources it used**. Resources may include database connections or file locks.
 
@@ -30,7 +30,7 @@ process.on('SIGTERM', () => {
 })
 ```
 
-# Health checks for Node.js applications
+### Health checks for Node.js applications
 
 Health checks of your applications are called by the load balancer of your application to let it know if the application instance is healthy, and can server traffic. If you are using Kubernetes, Kubernetes has two distinct health checks:
 
@@ -41,7 +41,7 @@ On how to set up health checks for Kubernetes, check out the official [Configure
 
 {% include component/cta.html %}
 
-# Enter `terminus`
+### Enter `terminus`
 
 [terminus](https://github.com/godaddy/terminus) is an open-source project, which adds health checks and graceful shutdown to your applications - to save you from the boilerplate code you would add otherwise. You only have to provide the cleanup logic for graceful shutdowns, and the health check logic for health checks, all the rest is handled by [terminus](https://github.com/godaddy/terminus).
 

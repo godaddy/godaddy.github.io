@@ -4,26 +4,21 @@ widgets:
   - twitter
 ---
 {% include section/header.html %}
-{% capture headline %}<h1>{{ page.title }}</h1>{% endcapture %}
-{% include component/masthead.html headline=headline %}
 
-<div class="container text-line-height-2x py-3">
-  <div class="authors text-center">
-    {% for author in page.authors %}
-    <a href="{{ author.url }}" class="mb-3 badge border badge-light shadow-sm">
-      <img class="rounded" src="{{ author.photo }}" alt="{{ author.name }}" width="32">
-      {{ author.name }}
-    </a>
-    {% endfor %}
-  </div>
+{% if page.options contains 'full-bleed-cover' %}
+<div class="cover-image" style="background-image: url({{ page.cover }});"></div>
+{% endif %}
+
+<div class="container text-line-height-2x pt-3">
+
+  <h1 class="mb-3">
+    {{ page.title }}
+  </h1>
 
   {{ content }}
 
-  <div class="text-center mb-1">
-    <a class="twitter-follow-button" href="https://twitter.com/GodaddyOSS" data-size="large">
-      Follow @GodaddyOSS
-    </a>
-  </div>
+  {% include component/author-panel.html %}
+  <!-- {% include component/social-share.html %} -->
 </div>
 
 {% include section/footer.html %}

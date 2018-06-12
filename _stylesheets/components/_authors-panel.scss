@@ -1,0 +1,13 @@
+.author {
+  h6 {
+    display: inline;
+  }
+
+  a {
+    color: $grey-midrange;
+
+    &:hover {
+      color: $primary-base;
+    }
+  }
+}

@@ -10,7 +10,7 @@ authors:
     photo: https://avatars0.githubusercontent.com/u/1103708?s=460&v=4
 ---
 
-Many web apps harness internationalization through frameworks such as React-Intl. This is awesome for the web and helps web apps obtain a global reach. 🗺
+<span class="text-drop-cap">M</span>any web apps harness internationalization through frameworks such as React-Intl. This is awesome for the web and helps web apps obtain a global reach. 🗺
 
 However, as translators or application developers add and remove messages, or create additional translation files to support new locales, the chance of having a malformed translation file increases.
 

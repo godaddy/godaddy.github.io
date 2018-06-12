@@ -9,7 +9,9 @@ authors:
     url: https://www.linkedin.com/in/jeffpea/
     photo: /assets/images/jxpearce.jpg
 ---
+
 CICD means both
+
 - Continuous Integration and Continuous Delivery
 - Continuous Integration and Continuous Deployment
 

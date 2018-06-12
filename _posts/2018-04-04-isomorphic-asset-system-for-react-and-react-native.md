@@ -4,6 +4,8 @@ title:  "Isomorphic Asset System for React and React-Native"
 date:   2018-04-04 02:00:00 -0800
 cover:  /assets/images/headers/isomorphic-asset-system.png
 excerpt: Introducing Asset System a cross platform asset rendering system for React and React-Native using SVG's.
+options:
+  - full-bleed-cover
 authors:
   - name: Arnout Kazemier
     url: https://github.com/3rd-Eden

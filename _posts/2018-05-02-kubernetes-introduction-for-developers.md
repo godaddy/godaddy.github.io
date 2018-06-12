@@ -10,7 +10,7 @@ authors:
     photo: https://avatars2.githubusercontent.com/u/2174968?s=460
 ---
 
-As Kubernetes is becoming the de facto container orchestration platform, more and more application developers have started using the `kubectl` CLI tool. The purpose of this article is to provide application developers with a set of tools and best practices to become more confident when interacting with the Kubernetes cluster.
+<span class="text-drop-cap">A</span>s Kubernetes is becoming the de facto container orchestration platform, more and more application developers have started using the `kubectl` CLI tool. The purpose of this article is to provide application developers with a set of tools and best practices to become more confident when interacting with the Kubernetes cluster.
 
 At GoDaddy, we have been using Kubernetes for quite some time now - this article is the first edition of what will become a living document of our best practices.
 

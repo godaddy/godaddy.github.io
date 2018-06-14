@@ -5,7 +5,9 @@ layout: default
 order: 1
 ---
 
-<div class="card-deck">
+{% include component/project-search.html %}
+
+<div class="card-deck project-cards">
   {% for project in site.data.projects %}
     {% assign mod = forloop.index | modulo: 3 %}
 
@@ -16,3 +18,7 @@ order: 1
     {% endif %}
   {% endfor %}
 </div>
+
+<script>
+  var projects = {{ site.data.projects | jsonify }};
+</script>

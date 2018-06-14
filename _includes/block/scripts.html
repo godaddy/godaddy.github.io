@@ -37,3 +37,10 @@
   }(document, "script", "twitter-wjs"));
 </script>
 {% endif %}
+
+{% if page.slug contains 'featured-projects' %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js"></script>
+<script>
+{% include scripts/filter-projects.js %}
+</script>
+{% endif %}

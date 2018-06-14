@@ -13,7 +13,8 @@
   "maintainer": {
     "name": "Silas Boyd-Wickizer",
     "link": "https://github.com/silasbw"
-  }
+  },
+  "id": "kubernetes-client"
 },
 {
   "name": "datastar",
@@ -30,7 +31,8 @@
   "maintainer": {
     "name": "Jarrett Cruger",
     "link": "https://github.com/jcrugzz"
-  }
+  },
+  "id": "datastar"
 },
 {
   "name": "procfilter",
@@ -43,7 +45,8 @@
   "maintainer": {
     "name": "Emerson R. Wiley",
     "link": "https://github.com/ewil"
-  }
+  },
+  "id": "procfilter"
 }, {
   "name": "terminus",
   "description": "Graceful shutdown and Kubernetes readiness / liveness checks for any Node.js HTTP applications",
@@ -59,7 +62,8 @@
   "maintainer": {
     "name": "Gergely Nemeth",
     "link": "https://github.com/gergelyke"
-  }
+  },
+  "id": "terminus"
 }, {
   "name": "Asset System",
   "description": "A cross platform asset rendering system for React and React-Native using SVGs",
@@ -71,5 +75,6 @@
   "maintainer": {
     "name": "Arnout Kazemier",
     "link": "https://github.com/3rd-Eden"
-  }
+  },
+  "id": "asset-system"
 }]

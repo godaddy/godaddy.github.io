@@ -10,7 +10,7 @@ $(function () {
     threshold: 0.3,
     minMatchCharLength: 2,
     distance: 255,
-    keys: ['description', 'name', 'maintainer.name']
+    keys: ['description', 'name']
   };
   var fuse = new Fuse(projects, fuseOptions);
 

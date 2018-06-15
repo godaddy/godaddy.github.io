@@ -25,6 +25,7 @@ theme_settings:
 
 permalink: pretty
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
 sass:
   sass_dir: ./_stylesheets

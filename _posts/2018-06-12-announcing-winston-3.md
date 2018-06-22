@@ -18,8 +18,8 @@ for a few reasons:
 
 - Replace the `winston` internals with Node.js `objectMode` streams.
 - Empower users to format their logs without changes to `winston` itself.
-- Modularize `winston` into several smaller packages: `winston-transport`,
-  `logform`, and `triple-beam`.
+- Modularize `winston` into several smaller packages: [`winston-transport`](https://github.com/winstonjs/winston-transport),
+  [`logform`](https://github.com/winstonjs/logform), and [`triple-beam`](https://github.com/winstonjs/triple-beam).
 - Modernize and performance optimize a now seven year old codebase to ES6
   (which it turns out was necessary to meet the API goals).
 

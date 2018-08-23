@@ -2,8 +2,8 @@
 layout: post
 title: "Eliminating Boilerplate and Increasing Reusability with Higher-Order Reducers"
 date: 2018-08-24 12:00:00 -0800
-cover: /assets/images/higher-order-reducers/redux.png
-exerpt: My team has changed the way we write our redux reducers, choosing a more dynamic approach than the common switch statement. Creating reducers with higher-order factory functions gives us some great benefits. They can make the process of writing reducers faster and they're also flexible functions that can be used to generalize patterns and reduce repetition.
+cover: /assets/images/higher-order-reducers/redux-logo.png
+excerpt: My team has changed the way we write our redux reducers, choosing a more dynamic approach than the common switch statement. Creating reducers with higher-order factory functions gives us some great benefits. They can make the process of writing reducers faster and they're also flexible functions that can be used to generalize patterns and reduce repetition.
 authors:
   - name: Bill Heberer
     url: https://github.com/bheberer

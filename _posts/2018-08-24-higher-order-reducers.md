@@ -12,7 +12,7 @@ authors:
 
 ### Motivation
 
-During my internship at GoDaddy, I've had the opportunity to work on the Account Homepage team, a Front-End centric team working on GoDaddy's new experience for logged in users. My team uses [Redux](https://redux.js.org/) to manage the staet of this app.
+During my internship at GoDaddy, I've had the opportunity to work on the Account Homepage team, a Front-End centric team working on GoDaddy's new experience for logged in users. My team uses [Redux](https://redux.js.org/) to manage the state of this app.
 
 Most complaints about Redux are related to boilerplate code and verboseness. These complaints are well-founded, as Redux was intended to make state changes obvious, not concise. In smaller apps, this kind of code isn't as much of a problem, but it becomes a significant time sink in large-scale apps. 
 

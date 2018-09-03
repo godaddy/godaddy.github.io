@@ -8,22 +8,9 @@ order: 2
 <div class="card-deck">
   {% for post in site.posts %}
     {% assign mod = forloop.index | modulo: 3 %}
-    <div class="card mb-3 shadow hoverable border-0">
-      <img class="card-img-top" src="{{ post.cover }}" alt="Article featured image">
-      <div class="card-body">
-        <h5 class="card-title text-font-headline">{{ post.title }}</h5>
 
-        <p class="card-text">
-          <small class="text-muted">Published {{ post.date | date: '%B %d, %Y' }}</small>
-        </p>
+    {% include component/post-card.html post=post %}
 
-        <p class="card-text">{{ post.excerpt }}</p>
-
-        <a href="{{ post.url }}" class="btn btn-primary" title="{{ post.title }}" role="button">
-          Read Article
-        </a>
-      </div>
-    </div>
     {% if mod == 0 %}
     <div class="w-100 d-none d-sm-block"><!-- wrap every 3 on md--></div>
     {% endif %}

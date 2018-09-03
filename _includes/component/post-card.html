@@ -1,0 +1,16 @@
+<div class="card card--post mb-3 shadow hoverable border-0">
+  <img class="card-img-top" src="{{ post.cover }}" alt="Article featured image">
+  <div class="card-body">
+    <h5 class="card-title text-font-headline">{{ post.title }}</h5>
+
+    <p class="card-text">
+      <small class="text-muted">Published {{ post.date | date: '%B %d, %Y' }}</small>
+    </p>
+
+    <p class="card-text">{{ post.excerpt }}</p>
+
+    <a href="{{ post.url }}" class="btn btn-primary" title="{{ post.title }}" role="button">
+      Read Article
+    </a>
+  </div>
+</div>

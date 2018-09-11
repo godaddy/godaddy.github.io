@@ -1,5 +1,8 @@
 <div class="card card--post mb-3 shadow hoverable border-0">
-  <img class="card-img-top" src="{{ post.cover }}" alt="Article featured image">
+  <a href="{{ post.url }}">
+    <img class="card-img-top" src="{{ post.cover }}" alt="Article featured image">
+  </a>
+
   <div class="card-body">
     <h5 class="card-title text-font-headline">{{ post.title }}</h5>
 

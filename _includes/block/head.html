@@ -23,12 +23,29 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url}}">
   {% endif %}
 
-  <meta name="og:image" content="{{ site.url }}/assets/images/banner.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url}}">
+
+  {% if page.cover %}
+    <meta property="og:image" content="{{ site.url }}{{ page.cover }}">
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}/assets/images/banner.png">
+  {% endif %}
+
   {% if page.title %}
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}">
+    <meta property="og:title" content="{{ page.title }} — {{ site.title }}">
+  {% else %}
+    <meta property="og:title" content="{{ site.title }}">
   {% endif %}
 
   {% if page.title %}
     <meta name="twitter:title" content="{{ page.title }} | @GodaddyOSS">
+  {% endif %}
+
+  {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt }}">
+  {% else %}
+    <meta property="og:description" content="{{ site.description }}">
   {% endif %}
 </head>

@@ -13,7 +13,7 @@ authors:
     photo: /assets/images/dagrawal.jpg
 ---
 
-I work on writing services using `Node.js` on a customer experience team at
+I work on writing services using Node.js on a customer experience team at
 GoDaddy. These services use data from different products across GoDaddy to
 provide personalized customer data to the client teams. To collect these data,
 we call different GoDaddy wide services. And this is where the real complication
@@ -21,8 +21,8 @@ comes in. Since we don't have control of these services, some of them are still
 legacy. And by legacy here I mean SOAP services as well. Yes, you read it right.
 [SOAP services](https://en.wikipedia.org/wiki/SOAP).
 
-We initially started writing our functional tests using real data. But then the
-functional tests became unreliable.
+We initially started writing our functional tests calling real/live APIs. But
+then the functional tests became unreliable.
 
 Here are the reasons why:
 1. The dependent services were slow.
@@ -31,7 +31,7 @@ Here are the reasons why:
    service has a special handling for data returned by external service which
    contains products having last day of their free trial.
 
-Using real data became more of a pain for our CICD process. It also made our
+Using live APIs became more of a pain for our CICD process. It also made our
 CICD process slow and flaky.
 
 This is when we spent time looking at different options to fix the test
@@ -49,7 +49,7 @@ and response.
 
 ## Nock setup
 
-Using Nock is simple. Run below command on terminal.
+Install Nock by running:
 
 ```sh
 npm i --save-dev nock
@@ -57,7 +57,7 @@ npm i --save-dev nock
 
 ## Mocking REST service
 
-Considering the service under development has an endpoint `/user` which returns
+Assume the service under development has an endpoint `/user` which returns
 `fullname` derived from the response of the dependent service, the test snippet
 would be: 
 
@@ -275,7 +275,7 @@ return nock('http://holidaywebservice.com', {
 
 ## Conclusion
 
-Using nock will make your functional test less flaky and more independent of
+Using Nock will make your functional test less flaky and more independent of
 external factors. This will make your CICD more robust, fast and trustable.
 Hence, increasing your productivity and decreasing the time waiting for the
 build to be green with your fingers crossed.

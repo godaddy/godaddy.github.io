@@ -10,6 +10,12 @@ Clone or download this repository.
 git clone git@github.com:godaddy/godaddy.github.io.git
 ```
 
+Install `bundle`.
+
+```
+gem install bundler
+```
+
 Install project dependencies.
 
 ```

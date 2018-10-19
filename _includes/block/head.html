@@ -26,6 +26,8 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GodaddyOSS">
 
   {% if page.cover %}
     <meta property="og:image" content="{{ site.url }}{{ page.cover }}">
@@ -37,10 +39,6 @@
     <meta property="og:title" content="{{ page.title }} — {{ site.title }}">
   {% else %}
     <meta property="og:title" content="{{ site.title }}">
-  {% endif %}
-
-  {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }} | @GodaddyOSS">
   {% endif %}
 
   {% if page.excerpt %}

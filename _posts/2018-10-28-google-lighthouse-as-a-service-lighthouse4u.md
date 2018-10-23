@@ -6,8 +6,6 @@ cover: /assets/images/lh4u/cover.jpg
 excerpt: Lighthouse4u is an opensource API for running
   Google Lighthouse tests at any scale, backed by Elasticsearch and Kibana
   for your search and visualization needs.
-options:
-  - full-bleed-cover
 authors:
   - name: Aaron Silvas
     url: https://www.linkedin.com/in/aaron-silvas-5817626/
@@ -196,10 +194,7 @@ has proven to be a great tool. We hope others can find it useful as well. [Pleas
 
 
 
-#
-
-
-#### Attribution
+**Attribution**
 
 Thanks to [Chad Sparkes](https://www.flickr.com/photos/chad_sparkes/18831807463/in/photolist-uG6Wgz-bmxnMS-88ni5P-o3hVvi-o3uqBq-6yYgBj-91fMRN-4nq35w-nL7xJp-k87ads-o3txKU-dQoBPG-nL6Cbz-8qqt1k-o5no9v-ak59iz-nL7Nsx-8CgM48-nL7xhn-bmxnzm-o3uqL3-SWhTaf-aLGWWz-72U3TJ-2Z5iM4-o3ur7U-FhL1z-2Z5dMP-72Q2XP-o3hZMe-o1xFmJ-2Z57UT-78u8qa-9UBXsC-o3uq89-nL78LL-nL7CFt-2Z9LES-o3hWp2-nL6MXY-8nMXYL-juZm8-o3Ai3B-o5nz9g-bR49Mg-o1xDRu-dw2Wm4-x95bm-uSmzr-yqGfDA)
 for the cover image.

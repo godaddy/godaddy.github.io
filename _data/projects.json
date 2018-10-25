@@ -101,4 +101,17 @@
     "url": "https://github.com/godaddy/eslint-plugin-i18n-json"
   }],
   "id": "eslint-plugin-i18n-json"
+}, {
+  "name": "lighthouse4u",
+  "description": "Google Lighthouse as a service, surfaced by both a friendly UI+API, and backed by Elastic Search",
+  "links": [{
+    "title": "lighthouse4u on NPM",
+    "type": "package",
+    "url": "https://www.npmjs.com/package/lighthouse4u"
+  }, {
+    "title": "lighthouse4u on GitHub",
+    "type": "source",
+    "url": "https://github.com/godaddy/lighthouse4u"
+  }],
+  "id": "lighthouse4u"
 }]

@@ -10,7 +10,7 @@ url: "https://godaddy.github.io"
 analytics_id: UA-37178807-20
 applicant_source: APPLICANT_SOURCE-3-119
 github_username:  godaddy
-twitter_username: GoDaddyOSS
+twitter_username: GodaddyOSS
 
 theme_settings:
   title: GoDaddy Open Source
@@ -24,12 +24,9 @@ theme_settings:
     Copyright © 1999 - 2018 GoDaddy Operating Company, LLC. All Rights Reserved.
 
 permalink: pretty
-
 plugins:
   - jekyll-feed
-  - jekyll-redirect-from
   - jekyll-sitemap
-
 sass:
   sass_dir: ./_stylesheets
   style: compressed

@@ -18,9 +18,9 @@
   {% feed_meta %}
 
   {% if page.canonical %}
-    <link rel="canonical" href="{{ page.canonical }}">
+  <link rel="canonical" href="{{ page.canonical }}">
   {% else %}
-    <link rel="canonical" href="{{ site.url }}{{ page.url}}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url}}">
   {% endif %}
 
   <meta property="og:locale" content="en_US">
@@ -30,20 +30,46 @@
   <meta name="twitter:site" content="@GodaddyOSS">
 
   {% if page.cover %}
-    <meta property="og:image" content="{{ site.url }}{{ page.cover }}">
+  <meta property="og:image" content="{{ site.url }}{{ page.cover }}">
   {% else %}
-    <meta property="og:image" content="{{ site.url }}/assets/images/banner.png">
+  <meta property="og:image" content="{{ site.url }}/assets/images/banner.png">
   {% endif %}
 
   {% if page.title %}
-    <meta property="og:title" content="{{ page.title }} — {{ site.title }}">
+  <meta property="og:title" content="{{ page.title }} — {{ site.title }}">
   {% else %}
-    <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:title" content="{{ site.title }}">
   {% endif %}
 
   {% if page.excerpt %}
-    <meta property="og:description" content="{{ page.excerpt }}">
+  <meta property="og:description" content="{{ page.excerpt }}">
   {% else %}
-    <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}">
   {% endif %}
+
+  <link rel="preload" href="//img1.wsimg.com/ux/fonts/boing/1.0/Boing-Bold.woff2" as="font" type="font/woff2" crossOrigin />
+  <style>
+  @font-face {
+    font-family: Boing-Bold;
+    src: url(//img1.wsimg.com/ux/fonts/boing/1.0/Boing-Bold.woff2) format("woff2"), url(//img1.wsimg.com/ux/fonts/boing/1.0/Boing-Bold.woff) format("woff");
+    font-display: swap;
+  }
+  </style>
+  <link rel="preload" href="//img1.wsimg.com/ux/fonts/sherpa/1.0/gdsherpa-bold.woff2" as="font" type="font/woff2" crossOrigin />
+  <style>
+  @font-face {
+    font-family: gdsherpa;
+    src: url(//img1.wsimg.com/ux/fonts/sherpa/1.0/gdsherpa-bold.woff2) format("woff2"), url(//img1.wsimg.com/ux/fonts/sherpa/1.0/gdsherpa-bold.woff) format("woff");
+    font-weight: 700;
+    font-display: swap;
+  }
+  </style>
+  <link rel="preload" href="//img1.wsimg.com/ux/fonts/sherpa/1.0/gdsherpa-regular.woff2" as="font" type="font/woff2" crossOrigin />
+  <style>
+  @font-face {
+    font-family: gdsherpa;
+    src: url(//img1.wsimg.com/ux/fonts/sherpa/1.0/gdsherpa-regular.woff2) format("woff2"), url(//img1.wsimg.com/ux/fonts/sherpa/1.0/gdsherpa-regular.woff) format("woff");
+    font-display: swap;
+  }
+  </style>
 </head>

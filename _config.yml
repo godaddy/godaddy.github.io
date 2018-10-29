@@ -1,4 +1,4 @@
-title: GoDaddy Open Source Center
+title: GoDaddy Open Source HQ
 description: > # this means to ignore newlines until the next key
   Information from our engineering team about the technology and tools we
   use to create software which empowers small businesses around the world
@@ -13,8 +13,8 @@ github_username:  godaddy
 twitter_username: GodaddyOSS
 
 theme_settings:
-  title: GoDaddy Open Source
-  home_headline: GoDaddy<br class="d-block d-md-none"> Open Source
+  title: Open Source HQ
+  home_headline: GoDaddy ♡<br class="d-block d-md-none"> Open Source
   home_tagline: >
     Joining forces with the<br class="d-block d-sm-none"> open source community
   footer_text: >

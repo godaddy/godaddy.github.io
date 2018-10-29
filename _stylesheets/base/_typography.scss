@@ -8,12 +8,41 @@ h3 {
   font-family: $text-headline-stack;
 }
 
+h4,
+h5,
+h6 {
+  font-family: $text-headline-stack-secondary;
+}
+
+.nabar-brand {
+  font-family: $text-headline-stack-secondary;
+  font-weight: 700;
+}
+
+.badge,
+a,
+button,
+li,
+p,
+small,
+span {
+  font-family: $font-family-sans-serif;
+}
+
 .justify-text {
   text-align: justify;
 }
 
 .text-small {
   font-size: .875em;
+}
+
+.text-line-height-1-5-em {
+  line-height: 1.5em;
+}
+
+.text-line-height-2em {
+  line-height: 2em;
 }
 
 .text-line-height-2x {
@@ -35,7 +64,7 @@ h3 {
 .text-drop-cap {
   color: $black-base;
   float: left;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: $text-headline-stack;
   font-size: 75px;
   line-height: 60px;
   padding-top: 4px;

@@ -24,13 +24,13 @@ This is not a Selenium bash but a specific case of using it for a time and findi
 ## Setting the stage, evaluating Selenium frameworks
 
 We moved from Ruby to Node.js for our UI tests. We spent a couple of months evaluating JS frameworks related to UI testing and Selenium specifically. Some of our evaluations:
-   * http://webdriver.io/
-   * http://nightwatchjs.org/
-   * https://github.com/admc/wd
-   * https://www.npmjs.com/package/selenium-webdriver
-   * http://appium.io/
-   * https://github.com/segmentio/nightmare
-   * https://theintern.io/
+   * [http://webdriver.io/](http://webdriver.io/)
+   * [http://nightwatchjs.org/](http://nightwatchjs.org/)
+   * [https://github.com/admc/wd](https://github.com/admc/wd)
+   * [https://www.npmjs.com/package/selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver)
+   * [http://appium.io/](http://appium.io/)
+   * [https://github.com/segmentio/nightmare](https://github.com/segmentio/nightmare)
+   * [https://theintern.io/](https://theintern.io/)
 
 We opted to write extensions for what we needed and build out our own framework since we wanted to do mobile testing and use WD.js which was used by Appium at the time.
 

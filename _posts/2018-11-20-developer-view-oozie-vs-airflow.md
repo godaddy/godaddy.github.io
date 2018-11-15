@@ -25,15 +25,15 @@ These are some of the scenarios for which built-in code is available in the tool
 * Add dependency checks; for example triggering a job if a file exists, or triggering one job after the completion of another.
 * Trigger a job from a failure step.
 * Cause the job to timeout when a dependency is not available.
-* Add Standard Level Agreement (SLA) to jobs.
+* Add Service Level Agreement (SLA) to jobs.
 
 With cron, you have to write code for the above functionality, whereas Oozie and Airflow provide it.
 
 
 ### Oozie ###
 
-Apache Oozie is a workflow scheduler which uses Directed Acyclic Graphs (DAG) to schedule Map Reduce Jobs (e.g. Pig, Hive, Sqoop, Distcp, Java functions). 
-It’s an open source project written in Java (https://github.com/apache/Oozie).
+[Apache Oozie](https://github.com/apache/Oozie) is a workflow scheduler which uses Directed Acyclic Graphs (DAG) to schedule Map Reduce Jobs (e.g. Pig, Hive, Sqoop, Distcp, Java functions). 
+It's an open source project written in Java.
 When we develop Oozie jobs, we write bundle, coordinator, workflow, properties file. A workflow file is required whereas others are optional.
 * The workflow file contains the actions needed to complete the job. Some of the common actions we use in our team are the Hive action to run hive scripts, ssh action, shell action, pig action and fs action for creating, moving, and removing files/folders
 * The coordinator file is used for dependency checks to execute the workflow.
@@ -58,8 +58,8 @@ At GoDaddy, we use Hue UI for monitoring Oozie jobs.
 
 ### Airflow
 
-Apache Airflow is another workflow scheduler which also uses DAGs.
-It’s an open source project written in python (https://github.com/apache/Oozie).
+[Apache Airflow](https://github.com/apache/incubator-airflow) is another workflow scheduler which also uses DAGs.
+It's an open source project written in python.
 Some of the features in Airflow are:
 * Operators, which are job tasks similar to actions in Oozie.
 * Hooks to connect to various databases.

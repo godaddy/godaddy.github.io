@@ -4,7 +4,7 @@
   </a>
 
   <div class="card-body">
-    <h5 class="card-title text-font-headline text-line-height-2x">{{ post.title }}</h5>
+    <a href="{{ post.url }}" title="{{ post.title }}"><h5 class="card-title text-font-headline text-line-height-2x">{{ post.title }}</h5></a>
 
     <p class="card-text">
       <span class="text-muted">{{ post.date | date: '%B %d, %Y' }} — </span>

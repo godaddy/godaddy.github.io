@@ -1,4 +1,4 @@
-# GoDaddy Open Source HQ
+# GoDaddy Engineering Blog
 
 Source code for GoDaddy's GitHub page at [godaddy.github.io](https://godaddy.github.io). Created and maintained by our engineers, this site contains blog posts about the technology and tools we're using at GoDaddy to create software which empowers small businesses around the world to build and market their digital identities.
 

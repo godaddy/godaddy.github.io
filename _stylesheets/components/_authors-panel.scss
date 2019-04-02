@@ -1,12 +1,16 @@
 .author {
+  .author-details {
+    display: inline-block;
+    vertical-align: middle;
+  }
   h6 {
-    display: inline;
+    margin-bottom: 0;
   }
 
   a {
     color: $grey-midrange;
 
-    &:hover {
+    &:hover, &:hover h6 {
       color: $primary-base;
     }
   }

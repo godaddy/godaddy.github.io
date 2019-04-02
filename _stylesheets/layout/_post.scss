@@ -15,4 +15,15 @@
   .navbar.navbar-top {
     border-bottom: 1px solid rgba(0,0,0,.1);
   }
+
+  blockquote {
+    background-color: $product-base;
+    color: $grey-midrange;
+    border-left: 3px solid $grey-midrange;
+    padding: 10px 10px 10px 13px;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

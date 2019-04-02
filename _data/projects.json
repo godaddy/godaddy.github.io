@@ -114,4 +114,17 @@
     "url": "https://github.com/godaddy/lighthouse4u"
   }],
   "id": "lighthouse4u"
+}, {
+  "name": "addhoc",
+  "description": "Handy little helper to create proper React HOC functions complete with hoisted statics and forwarded refs",
+  "links": [{
+    "title": "addhoc on NPM",
+    "type": "package",
+    "url": "https://www.npmjs.com/package/addhoc"
+  }, {
+    "title": "addhoc on GitHub",
+    "type": "source",
+    "url": "https://github.com/godaddy/addhoc"
+  }],
+  "id": "addhoc"
 }]

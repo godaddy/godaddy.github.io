@@ -17,7 +17,12 @@
       <div class="author mb-3">
         <a href="{{ author.url }}">
           <img class="rounded mr-2" src="{{ author.photo }}" alt="{{ author.name }}" width="64">
-          <h6>{{ author.name }}</h6>
+          <span class="author-details">
+            <h6>{{ author.name }}</h6>
+            {% if author.title %}
+            <h7>{{ author.title }}</h7>
+            {% endif %}
+          </span>
         </a>
       </div>
     </div>

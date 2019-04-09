@@ -2,7 +2,7 @@
 layout: post
 title: "Creating better examples with @exemplar/storybook"
 date: 2019-04-09 09:00:00 -0700
-cover: /assets/images/headers/exemplar-cover.jpg
+cover: /assets/images/exemplar/cover.png
 excerpt: We're announcing the release of @exemplar/storybook! Exemplar is a way to write examples for your React components with less boilerplate storybook config. Do more by writing less.
 authors:
   - name: Sivan Mehta

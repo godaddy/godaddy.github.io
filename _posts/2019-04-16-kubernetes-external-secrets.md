@@ -3,7 +3,7 @@ layout: post
 title: "Kubernetes External Secrets"
 date: 2019-04-16 09:00:00 -0700
 cover: /assets/images/kubernetes-external-secrets/cover.jpg
-excerpt: Engineering teams at GoDaddy use Kubernetes with secret management systems, like AWS Secrets Manager. "External" secret management systems often provide useful features, such as rotation, that the native Kubernetes [`Secret`](https://kubernetes.io/docs/concepts/configuration/secret/) object does not support. External systems, however, require extra work for engineering teams to leverage in their Kubernetes clusters. For example, a team might need to implement custom application code to load secret data at run-time.  Kubernetes External Secrets is a new open source project that addresses this issue by introducing the `ExternalSecret` object type. With an `ExternalSecret` object, an engineering team can manage its secret data in an external system and access that data in the same way they would if they were using a `Secret` object.
+excerpt: Engineering teams at GoDaddy use Kubernetes with secret management systems, like AWS Secrets Manager. "External" secret management systems often provide useful features, such as rotation, that the native Kubernetes Secret object does not support. Kubernetes External Secrets is a new open source project that introduces the ExternalSecret object type. With an ExternalSecret object, an engineering team can manage its secret data in an external system and access that data in the same way they would if they were using a Secret object.
 authors:
   - name: Silas Boyd-Wickizer
     title: Sr. Director of Engineering
@@ -205,8 +205,9 @@ about working with community members to add them.
 
 The Kubernetes External Secrets controller does not have a broad
 attack surface since it is accessible only via the Kubernetes API. We
-have worked, however, to tighten security by leveraging RBAC to
-restrict what the [controller can
+have worked, however, to tighten security by leveraging
+[RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
+to restrict what the [controller can
 access](https://github.com/godaddy/kubernetes-external-secrets/blob/master/external-secrets.yml),
 using
 [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)

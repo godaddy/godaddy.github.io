@@ -136,7 +136,7 @@ The `ExternalSecret` controller follows a familiar pattern seen in
 other Kubernetes objects, like
 [`Deployments`](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/):
 users declare a desired state in an `ExternalSecret` object and the
-controller creates or updates a complimentary `Secret` object to reach
+controller creates or updates a complementary `Secret` object to reach
 that state. The controller monitors `ExternalSecret` objects, fetches
 secret data from the specified external secret management system, and automatically
 creates native `Secret` objects that hold the secret data. The
@@ -165,7 +165,7 @@ Secrets wrote a [Kubernetes External Secrets
 CLI](https://github.com/silasbw/kubernetes-external-secrets-cli) that
 makes migration easy by converting a `Secret` to a series of AWS
 CLI commands and a kubectl command that load your secret data
-into AWS Secrets Manager and create a complimentary `ExternalSecret`
+into AWS Secrets Manager and create a complementary `ExternalSecret`
 object.
 
 ## Other approaches

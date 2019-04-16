@@ -164,8 +164,8 @@ If you're interested in converting existing `Secret` objects to
 Secrets wrote a [Kubernetes External Secrets
 CLI](https://github.com/silasbw/kubernetes-external-secrets-cli) that
 makes migration easy by converting a `Secret` to a series of AWS
-CLI commands and a kubectl command that load your secret data
-into AWS Secrets Manager and create a complementary `ExternalSecret`
+CLI commands and a kubectl command that loads your secret data
+into AWS Secrets Manager and creates a complementary `ExternalSecret`
 object.
 
 ## Other approaches

@@ -39,13 +39,13 @@ Note: There is also an OAuth based version where instead of the DNS Provider mak
 
 These templates are the cornerstone of Domain Connect. The template encapsulates all the DNS changes a Service Provider requires, and allows the DNS Provider to approve and manage the changes.
 
-The current version of the specification can be found at https://domainconnect.org.
+The current version of the specification can be found [here](https://www.domainconnect.org/specification/).
 
 ## A Standard is Born
 
 Our next step was to gain adoption.  We already had a dozen plus Service Providers supporting the protocol. But we wanted more DNS Providers.  We started talking about it with all the main DNS Providers, and while there was a great deal of interest and support there was little action.  Implementation fell into their various backlogs.
 
-This all changed at a Hackathon at Cloudfest in the spring of 2017.  Some engineers from GoDaddy, Host Europe Group, and United Domains got together and implemented two projects. The first was to add Domain Connect support to United Domains.  The other project was to build a simple example Service Provider. The latter has since evolved, but can be found at https://exampleservice.domainconnect.org.
+This all changed at a Hackathon at Cloudfest in the spring of 2017.  Some engineers from GoDaddy, Host Europe Group, and United Domains got together and implemented two projects. The first was to add Domain Connect support to United Domains.  The other project was to build a simple example Service Provider. The latter has since evolved, but can be found at [https://exampleservice.domainconnect.org](https://exampleservice.domainconnect.org).
 
 At the end of the hackathon we successfully demonstrated configuring our new example service with a domain at United Domains and at GoDaddy.  Coincidently the MC of the hackathon was Paul Mockapetris, who along with Jon Postel is credited as a co-inventor of DNS. A highlight was when we explained the reason for doing this was that normal users don’t understand DNS.  Paul is a good-natured person who appreciated and largely agreed with this jab. 
 
@@ -67,9 +67,9 @@ First, we built our DDNS application on top of an open source protocol. This mea
 
 Second, to our knowledge this is the first use of OAuth where a single application is implemented to talk to multiple OAuth providers.  While most OAuth implementations are built to allow multiple applications to access an API, they are purpose built for one service.  For example, Facebook uses OAuth to allow third-party applications to access Facebook APIs on behalf of the granting users. But these third-party applications only talk to Facebook.
 
-This application uses OAuth to call the same API at different providers. It talks to GoDaddy, or just as easily to 1&1.  Pretty cool to a nerd.  The application can be found at https://github.com/Domain-Connect/DomainConnectDDNS-Windows
+This application uses OAuth to call the same API at different providers. It talks to GoDaddy, or just as easily to 1&1.  Pretty cool to a nerd.  The application can be found at [https://github.com/Domain-Connect/DomainConnectDDNS-Windows](https://github.com/Domain-Connect/DomainConnectDDNS-Windows).
 
-Of course coming out of this hackathon participants from multiple companies helped to improve and evolve the specification.  It has since evolved and is supported by over 40 companies with contributors from a wide variety of them, all listed at https://domainconnect.org.
+Of course coming out of this hackathon participants from multiple companies helped to improve and evolve the specification.  It has since evolved and is supported by over 40 companies with contributors from a wide variety of them, all listed at [https://domainconnect.org](https://domainconnect.org).
 
 As time passed, more Service Providers onboarded. This included G Suite from Google. 
 
@@ -81,7 +81,7 @@ So we went into our third year at the Cloudfest Hackathon with a goal to solve t
 
 We built a reference implementation for DNS Providers. This library was used to build a proof of concept on top of PowerDNS and Bind.  
 
-Like all the open source examples as part of Domain Connect, this can be found at https://domainconnect.org.
+Like all the open source examples as part of Domain Connect, this can be found at [https://www.domainconnect.org/code/](https://www.domainconnect.org/code/).
 
 We currently have several major DNS Providers leveraging this library and launching their implementations in the coming months.
  
@@ -89,4 +89,4 @@ We currently have several major DNS Providers leveraging this library and launch
 
 At GoDaddy, we continue to onboard Service Providers onto the platform. And we are looking forward to working with the community to push forward the spec. We also enjoy and will continue to work with the other DNS Providers to help them onboard to the protocol. This helps consumers and makes the Internet easier to use. They say a rising tide lifts all boats, and we feel that Domain Connect is a great ‘tide’.
 
-As an open standard, it is the community at large that owns and improves it. Feel free to check out https://domainconnect.org to learn more or get involved.
+As an open standard, it is the community at large that owns and improves it. Feel free to check out [https://domainconnect.org](https://domainconnect.org) to learn more or get involved.

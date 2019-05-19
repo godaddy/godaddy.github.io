@@ -102,7 +102,7 @@ the results!
 
 [`@storybook/react`]: https://storybook.js.org/basics/guide-react/
 [`@exemplar/storybook`]: https://github.com/godaddy/exemplar
-[React]: (https://reactjs.org/)
+[React]: https://reactjs.org/
 [this PR]: https://github.com/storybooks/storybook/pull/4942
 [Alfons Morales]: https://unsplash.com/@alfonsmc10
 [Unsplash]: https://unsplash.com/photos/YLSwjSy7stw

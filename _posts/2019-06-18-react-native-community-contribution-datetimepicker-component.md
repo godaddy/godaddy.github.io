@@ -39,16 +39,16 @@ components there are fewer platform-specific implementations. The overall goal
 of the new combined module is to be a cross-platform React component. It
 will try to converge the features of iOS and Android as much as possible.
 
-## Welcome `react-native-datetimepicker`
+## Welcome `@react-native-community/datetimepicker`
 
 Combined, the set of Android and iOS modules form a new
-[`react-native-datetimepicker` component][react-native-datetimepicker]. To use
+[`@react-native-community/datetimepicker` component][react-native-datetimepicker]. To use
 this module install it with `npm` or `yarn` and use `react-native link` to
 bundle it in your project.
 
 ```bash
-npm install --save react-native-datetimepicker
-react-native link react-native-datetimepicker
+npm install --save @react-native-community/datetimepicker
+react-native link @react-native-community/datetimepicker
 ```
 
 This will make the React component available for use in your project.
@@ -57,7 +57,7 @@ pickers. The example below will render a date picker as Modal on Android and an
 inline component on iOS.
 
 ```js
-import DateTimePicker from 'react-native-datetimepicker';
+import DateTimePicker from '@react-native-community/datetimepicker';
 
 function renderMyComponent({ date, onChange }) {
   return <DateTimePicker value={date} onChange={onChange} mode="date" />

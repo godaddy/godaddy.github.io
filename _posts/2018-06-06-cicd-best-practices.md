@@ -377,7 +377,7 @@ We contribute to Jenkins as part of that culture.
 
 ## Further reading
 
-- Read about our use of [Puppeteer](https://godaddy.github.io/2018/05/07/moving-from-webdriver-to-puppeteer/) in
+- Read about our use of [Puppeteer](/2018/05/07/moving-from-webdriver-to-puppeteer/) in
 testing one of our internal applications
 - [Declarative pipeline documentation](https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline)
 - [Build a multibranch Pipeline project](https://jenkins.io/doc/tutorials/build-a-multibranch-pipeline-project/)

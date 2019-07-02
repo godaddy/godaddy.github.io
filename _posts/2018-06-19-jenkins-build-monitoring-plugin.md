@@ -10,7 +10,7 @@ authors:
     photo: /assets/images/jxpearce.jpg
 ---
 
-I recently wrote about some of the [Jenkins CICD best practices](https://godaddy.GitHub.io/2018/06/05/cicd-best-practices/)
+I recently wrote about some of the [Jenkins CICD best practices](/2018/06/05/cicd-best-practices/)
 we use on my team at GoDaddy. One of the best practices was:
 
  **You should use declarative pipeline**.

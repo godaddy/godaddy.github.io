@@ -186,5 +186,5 @@ for the new module.
 [eslint]: https://www.npmjs.com/package/@react-native-community/eslint-config
 [orb]: https://github.com/react-native-community/react-native-circleci-orb/
 [Detox]: https://github.com/wix/detox/
-[ekke]: https://godaddy.github.io/2019/05/22/testing-react-native-using-ekke/
+[ekke]: /2019/05/22/testing-react-native-using-ekke/
 [install]: https://github.com/react-native-community/react-native-datetimepicker/#getting-started

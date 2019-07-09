@@ -3,13 +3,7 @@ layout: post
 title: "Asherah: An Application Encryption SDK"
 date: 2019-07-09 09:00:00 -0700
 cover: /assets/images/asherah/encryption.jpg
-excerpt: Enterprise data encryption is difficult, error-prone and problematic to scale. In 
-particular, managing key rotation and limiting the blast radius of a leaked private key are 
-difficult problems. GoDaddy is releasing its proposed solution to this problem as open source. 
-It's an Application Encryption SDK called Asherah. Asherah's foundational principle is that 
-you plug in your choice of key management services and then use it to manage your hierarchical 
-key set and encrypt data using a method known as envelope encryption. We're an incubator project 
-and currently in a request-for-feedback phase as we test the implementation internally.
+excerpt: Enterprise data encryption is difficult, error-prone and problematic to scale. In particular, managing key rotation and limiting the blast radius of a leaked private key are difficult problems. GoDaddy is releasing its proposed solution to this problem as open source. It's an Application Encryption SDK called Asherah. Asherah's foundational principle is that you plug in your choice of key management services and then use it to manage your hierarchical key set and encrypt data using a method known as envelope encryption. We're an incubator project and currently in a request-for-feedback phase as we test the implementation internally.
 authors:
   - name: Nikhil Lohia
     title: Software Engineer
@@ -24,7 +18,6 @@ authors:
     url: https://github.com/jpaskhay
     photo: https://avatars3.githubusercontent.com/u/684963?s=60&v=4
 ---
-
 
 > "...Most Creation myths begin with a 'paradoxical unity of everything, evaluated either as chaos or as Paradise,' and the 
 > world as we know it does not really come into being until this is changed. I should point out here that Enki's original name 

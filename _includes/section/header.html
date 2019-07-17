@@ -1,5 +1,0 @@
-<!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  {% include block/head.html %}
-  <body {% if layout.slug or page.slug %}class="{% if layout.slug %}layout--{{ layout.slug }} {% endif %}{% if page.slug %}page--{{ page.slug }}{% endif %}"{% endif %}>
-    {% include component/navigation.html %}
